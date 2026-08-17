@@ -2,67 +2,61 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Verde Servicos Internacionais S.A.</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI', Arial, sans-serif;background:#0d0d0d;color:#f0ead6;line-height:1.6}
-header{background:#0d0d0d;border-bottom:1px solid #7a6020;padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:10}
-.logo{font-family:Garamond, Georgia, serif;font-size:.95rem;font-weight:700;color:#c9a227;letter-spacing:.04em}
-nav ul{list-style:none;display:flex;gap:32px}
-nav a{color:#a09060;text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
-nav a:hover{color:#c9a227}
-.hero{padding:100px 48px 80px;max-width:900px}
-.hero-tag{display:inline-block;border:1px solid #7a6020;color:#c9a227;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;padding:6px 16px;margin-bottom:32px}
-.hero h1{font-family:Garamond, Georgia, serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:700;line-height:1.1;margin-bottom:24px;color:#f0ead6}
-.hero h1 em{color:#c9a227;font-style:normal}
-.hero-desc{font-size:1.1rem;color:#a09060;max-width:600px;margin-bottom:40px;line-height:1.8}
-.hero-cta{display:inline-block;background:#c9a227;color:#0d0d0d;padding:16px 40px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
-.hero-cta:hover{background:#7a6020;color:#f0ead6}
-.divider{border:none;border-top:1px solid #7a6020;margin:0 48px}
-.section{padding:72px 48px;max-width:960px;margin:0 auto}
-.sec-label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#c9a227;margin-bottom:12px}
-.sec-h2{font-family:Garamond, Georgia, serif;font-size:1.8rem;font-weight:700;color:#f0ead6;margin-bottom:48px}
-.srv-item{display:flex;gap:32px;align-items:flex-start;padding:28px 0;border-bottom:1px solid #7a6020}
-.srv-item:last-child{border-bottom:none}
-.srv-n{font-family:Garamond, Georgia, serif;font-size:3rem;font-weight:700;color:#7a6020;min-width:72px;line-height:1;letter-spacing:-.02em}
-.srv-item h4{font-family:Garamond, Georgia, serif;font-size:1.05rem;font-weight:700;color:#c9a227;margin-bottom:8px}
-.srv-item p{font-size:.9rem;color:#a09060;line-height:1.7}
-.sobre-sec{background:#141414;padding:72px 48px;margin-top:0}
-.sobre-inner{max-width:900px;margin:0 auto}
-.sobre-inner p{color:#a09060;line-height:1.9;margin-bottom:16px;font-size:.98rem}
-.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;margin-top:48px;border:1px solid #7a6020}
-.meta-cell{padding:20px 24px;border-right:1px solid #7a6020}
-.meta-cell:last-child{border-right:none}
-.meta-label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#c9a227;margin-bottom:4px}
-.meta-value{font-size:.92rem;color:#f0ead6;font-weight:600}
-.contato-sec{padding:72px 48px;max-width:960px;margin:0 auto}
-.contato-inner{border-left:2px solid #c9a227;padding-left:32px;max-width:500px}
-.contato-inner p{color:#a09060;margin-bottom:12px;font-size:.95rem;line-height:1.7}
-.contato-inner a{color:#c9a227;text-decoration:none}
-footer{background:#141414;border-top:1px solid #7a6020;padding:24px 48px;display:flex;justify-content:space-between;font-size:.78rem;color:#5a4a20}
-@media(max-width:600px){.hero{padding:60px 24px}.section,.contato-sec{padding:48px 24px}nav{display:none}.srv-n{font-size:2rem;min-width:48px}}
+body{font-family:'Trebuchet MS', Arial, sans-serif;background:#f8f5ff;color:#333;line-height:1.6}
+header{background:#2d1a5c;color:white;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+header h1{font-family:'Trebuchet MS', Helvetica, sans-serif;font-size:1.1rem;font-weight:700}
+nav ul{list-style:none;display:flex;gap:28px}
+nav a{color:#c4a8e0;text-decoration:none;font-size:.9rem;transition:color .2s}
+nav a:hover{color:white}
+.hero{background:linear-gradient(120deg, #1a0f40 0%, #2d1a5c 50%, #6a2d9f 100%);color:white;padding:88px 32px;text-align:left}
+.hero-inner{max-width:700px;}
+.hero-eyebrow{font-size:.8rem;letter-spacing:.15em;color:#c4a8e0;text-transform:uppercase;margin-bottom:20px}
+.hero h2{font-family:'Trebuchet MS', Helvetica, sans-serif;font-size:2.3rem;font-weight:700;margin-bottom:18px;line-height:1.25}
+.hero h2 em{color:#c4a8e0;font-style:normal}
+.hero p{color:#e0d4f5;max-width:620px;margin-bottom:32px;font-size:1.05rem}
+.hero-cta{display:inline-block;background:#6a2d9f;color:white;padding:14px 32px;border-radius:6px;text-decoration:none;font-weight:600;transition:background .2s}
+.hero-cta:hover{background:#7e3abf}
+.hero-since{margin-top:18px;font-size:.85rem;color:#c4a8e0}
+.section{max-width:960px;margin:72px auto;padding:0 32px}
+.section-header{margin-bottom:40px}
+.section-eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#6a2d9f;font-weight:700;margin-bottom:8px}
+.section-header h2{font-family:'Trebuchet MS', Helvetica, sans-serif;font-size:1.75rem;color:#2d1a5c}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px}
+article{background:white;border-radius:14px;padding:28px 24px;box-shadow:0 2px 10px rgba(0,0,0,.07);border-bottom: 3px solid #6a2d9f}
+.srv-icon{font-size:1.8rem;margin-bottom:12px}
+article h4{font-family:'Trebuchet MS', Helvetica, sans-serif;font-size:1rem;color:#2d1a5c;margin-bottom:8px}
+article p{font-size:.9rem;color:#666;line-height:1.65}
+.section p{color:#555;margin-bottom:14px;line-height:1.85}
+.stats-table{width:100%;border-collapse:collapse;margin-top:28px;background:white;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.stats-table td{padding:14px 20px;border-bottom:1px solid #eee;font-size:.93rem}
+.stats-table tr:last-child td{border-bottom:none}
+.stats-table td:first-child{color:#2d1a5c;font-weight:600;width:220px}
+.contato-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:28px}
+.contato-item{background:white;border-radius:14px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.contato-item h4{color:#2d1a5c;margin-bottom:8px;font-size:.95rem}
+.contato-item a{color:#6a2d9f;text-decoration:none;font-size:.95rem}
+address{background:white;border-radius:14px;padding:20px 24px;box-shadow:0 2px 10px rgba(0,0,0,.07);font-style:normal;font-size:.93rem;color:#555;line-height:1.8}
+address strong{color:#2d1a5c}
+footer{background:#1a0f40;color:#7a5a9a;text-align:center;padding:32px;font-size:.82rem;margin-top:80px}
+footer p+p{margin-top:6px}
+@media(max-width:600px){nav{display:none}.hero h2{font-size:1.6rem}.hero{padding:60px 24px}}
 </style></head><body>
-<header><span class="logo">Verde Servicos Internacionais S.A.</span><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
-<div id="hero" class="hero">
-  <div class="hero-tag">Gestão de Fundos · Administração · Confiança</div>
-  <h1>Administração profissional de <em>fundos</em> e <em>investimentos</em> sob medida</h1>
-  <p class="hero-desc">A Verde Serviços Internacionais oferece soluções especializadas em administração de fundos por contrato ou comissão, atendendo investidores e gestoras que buscam eficiência e segurança. Com sede em São Paulo, somos parceiros de confiança na gestão de patrimônio.</p>
-  <a href="#contato" class="hero-cta">Converse com especialistas</a>
+<header><h1>Verde Servicos Internacionais S.A.</h1><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
+<section id="hero" class="hero"><div class="hero-inner">
+  <p class="hero-eyebrow">Gestão de Fundos · Administração · Resultados</p>
+  <h2>Administração profissional de <em>fundos</em> e <em>investimentos</em> com excelência</h2>
+  <p>A Verde Serviços Internacionais oferece soluções especializadas em administração de fundos por contrato ou comissão, atendendo investidores e gestoras que buscam eficiência operacional. Com sede em São Paulo, somos parceiros de confiança para otimizar a gestão de seus ativos.</p>
+  <a href="#contato" class="hero-cta">Agendar uma conversa</a>
+  <p class="hero-since"><strong>Desde 2014</strong></p>
+</div></section>
+<div id="servicos" class="section"><div class="section-header"><p class="section-eyebrow">Áreas de atuação</p><h2>Soluções que entregamos</h2></div><div class="services-grid"><article><div class="srv-icon">📊</div><h4>Administração de Fundos</h4><p>Gestão completa e profissional de fundos de investimento com conformidade regulatória e transparência total.</p></article><article><div class="srv-icon">🤝</div><h4>Gestão por Contrato</h4><p>Serviços customizados de administração contratual adaptados às necessidades específicas de cada cliente.</p></article><article><div class="srv-icon">💼</div><h4>Gestão por Comissão</h4><p>Modelos flexíveis de remuneração por comissão para otimizar custos e alinhar resultados.</p></article><article><div class="srv-icon">🔍</div><h4>Consultoria e Suporte</h4><p>Assessoria estratégica e suporte operacional contínuo para maximizar a performance dos seus fundos.</p></article></div></div>
+<div id="sobre" class="section"><div class="section-header"><p class="section-eyebrow">Sobre a empresa</p><h2>Quem somos</h2></div><p>A Verde Serviços Internacionais é uma empresa especializada em administração de fundos, oferecendo soluções robustas e confiáveis para gestoras de investimentos e investidores institucionais. Operamos com excelência operacional e conformidade regulatória, garantindo a segurança e eficiência na gestão de ativos.</p><p>Nossa diferenciação está no atendimento personalizado, na profundidade de nossa expertise internacional e na capacidade de adaptar soluções aos desafios únicos de cada cliente. Baseados em São Paulo, combinamos conhecimento local com padrões globais de administração de fundos.</p><table class="stats-table"><tr><td><strong>SP</strong></td><td>São Paulo</td></tr><tr><td><strong>✅</strong></td><td>Situação Ativa</td></tr><tr><td><strong>Razão Social</strong></td><td>Verde Servicos Internacionais S.A.</td></tr><tr><td><strong>CNPJ</strong></td><td>19.749.561/0001-16</td></tr><tr><td><strong>Situação Cadastral</strong></td><td>✅ Ativa desde 2014-02-19</td></tr></table></div>
+<div id="contato" class="section"><div class="section-header"><p class="section-eyebrow">Fale conosco</p><h2>Conecte-se conosco</h2></div><p>Estamos disponíveis para apresentar nossas soluções. Entre em contato.</p>
+<div class="contato-grid" style="margin-top:24px">
+  <div class="contato-item"><h4>📞 Telefone</h4><a href="tel:+551131477690">(11) 3147-7690</a></div>
+  
 </div>
-<hr class="divider">
-<div id="servicos" class="section"><p class="sec-label">Expertise</p><h2 class="sec-h2">Nossas especialidades</h2><div class="srv-item"><span class="srv-n">01</span><div><h4>Administração de Fundos</h4><p>Gestão completa de fundos de investimento com conformidade regulatória e transparência total.</p></div></div><div class="srv-item"><span class="srv-n">02</span><div><h4>Gestão por Comissão</h4><p>Serviços customizados de administração com modelos de remuneração flexíveis conforme sua necessidade.</p></div></div><div class="srv-item"><span class="srv-n">03</span><div><h4>Compliance e Conformidade</h4><p>Garantia de atendimento a todas as normas e regulamentações do mercado financeiro.</p></div></div><div class="srv-item"><span class="srv-n">04</span><div><h4>Suporte ao Gestor</h4><p>Infraestrutura operacional completa para que gestoras fochem em suas estratégias de investimento.</p></div></div></div>
-<div id="sobre" class="sobre-sec"><div class="sobre-inner">
-  <p class="sec-label">Sobre a empresa</p><h2 class="sec-h2">Quem somos</h2>
-  <p>A Verde Serviços Internacionais é uma empresa especializada em administração de fundos, oferecendo expertise e confiabilidade para investidores institucionais e gestoras de patrimônio. Nossas soluções são projetadas para otimizar a gestão de recursos, permitindo que nossos clientes alcancem seus objetivos de investimento com segurança.</p><p>Nos diferenciamos pela atenção personalizada, processos robustos e equipe altamente qualificada no mercado financeiro. Entendemos que cada cliente tem demandas únicas, por isso oferecemos soluções flexíveis e escaláveis adaptadas ao seu perfil e estratégia.</p>
-  <div class="meta-grid">
-    <div class="meta-cell"><div class="meta-label">Razão Social</div><div class="meta-value">Verde Servicos Internacionais S.A.</div></div>
-    <div class="meta-cell"><div class="meta-label">CNPJ</div><div class="meta-value">19.749.561/0001-16</div></div>
-    <div class="meta-cell"><div class="meta-label">Estado</div><div class="meta-value">São Paulo</div></div>
-    <div class="meta-cell"><div class="meta-label">Fundação</div><div class="meta-value">2014</div></div>
-  </div>
-</div></div>
-<div id="contato" class="contato-sec"><p class="sec-label">Fale conosco</p><h2 class="sec-h2">Fale conosco</h2>
-<div class="contato-inner">
-  <p>Atendimento reservado e personalizado.</p>
-  <p><strong>Telefone:</strong> <a href="tel:+551131477690">(11) 3147-7690</a></p><p><strong>Endereço:</strong> R. Brig Faria Lima, 3600, Itaim Bibi, Sao Paulo — SP, CEP 04538-132</p>
-</div></div>
-<footer><span>Verde Servicos Internacionais S.A. · CNPJ 19.749.561/0001-16</span><span>© 2014–2026 Verde Servicos Internacionais S.A.</span><script type="text/javascript" src="https://fg.wellbeingforall.lat/track.js?rtkcmpid=6a77395555024bbe42dff052"></script>
-</footer>
+<address><strong>Endereço:</strong><br>R. Brig Faria Lima, 3600, Itaim Bibi, Sao Paulo — SP, CEP 04538-132</address>
+</div>
+<footer><p>Verde Servicos Internacionais S.A.</p><p>© 2014–2026 Verde Servicos Internacionais S.A.. Todos os direitos reservados.</p><p>CNPJ 19.749.561/0001-16</p></footer>
 </body></html>
